@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="custom.css">
+    <script type="custom.js"></script>
   </head>
   <body>
 
@@ -19,11 +22,11 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6">
-          <img src="./?action=stream" />
+        <div class="col-md-8" id="streamContainer">
+          <img id="streamImg" src="./?action=stream" />
         </div>
-        <div class="col-md-6">
-          <h3>12:00:00</h3>
+        <div class="col-md-4" onload="startTime()">
+          <div class="time" id="time"></div>
           <p>Currently sunny in toronto</p>
           <p>going to be cloudy later</p>
         </div>
@@ -40,13 +43,6 @@
 </html>
 <!--  -->
 
-<style>
-/*img {
-  width: 640px;
-  height: 480px;
-  background: #ddd;
-}*/
-</style>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
